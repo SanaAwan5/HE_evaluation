@@ -1,0 +1,403 @@
+[
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "model_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getNumGradientsforModel",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "num",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "model_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_new_model_error",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes32[]",
+				"name": "_new_weights_addr",
+				"type": "bytes32[]"
+			}
+		],
+		"name": "evalGradientfromAvg",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getNumModels",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "model_cnt",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "model_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "gradient_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getAvg",
+		"outputs": [
+			{
+				"internalType": "bytes32[]",
+				"name": "",
+				"type": "bytes32[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_gradient_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_new_model_error",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes32[]",
+				"name": "_new_weights_addr",
+				"type": "bytes32[]"
+			}
+		],
+		"name": "evalGradient",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "model_i",
+				"type": "uint256"
+			}
+		],
+		"name": "getModel",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes32[]",
+				"name": "",
+				"type": "bytes32[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "bounty",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "totalError",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "solvedError",
+				"type": "uint256"
+			}
+		],
+		"name": "calculateIncentive",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "total",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "model_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes32[]",
+				"name": "_grad_addr",
+				"type": "bytes32[]"
+			}
+		],
+		"name": "addGradient",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "model_i",
+				"type": "uint256"
+			}
+		],
+		"name": "getUpdatedModel",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes32[]",
+				"name": "",
+				"type": "bytes32[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "bytes32[]",
+				"name": "_avg",
+				"type": "bytes32[]"
+			},
+			{
+				"internalType": "uint256",
+				"name": "model_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "numGrads",
+				"type": "uint256"
+			}
+		],
+		"name": "addAvg",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getNumUpdatedModels",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "model_cnt",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "bytes32[]",
+				"name": "_weights",
+				"type": "bytes32[]"
+			},
+			{
+				"internalType": "uint256",
+				"name": "initial_error",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "target_error",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "best_error",
+				"type": "uint256"
+			}
+		],
+		"name": "addUpdatedModel",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "bytes32[]",
+				"name": "_weights",
+				"type": "bytes32[]"
+			},
+			{
+				"internalType": "uint256",
+				"name": "initial_error",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "target_error",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "best_error",
+				"type": "uint256"
+			}
+		],
+		"name": "addModel",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "model_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "gradient_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getGradient",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32[]",
+				"name": "",
+				"type": "bytes32[]"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes32[]",
+				"name": "",
+				"type": "bytes32[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
